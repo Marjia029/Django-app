@@ -2,6 +2,8 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from .forms import StudentForm
 from .models import Student
+
+
 def home(request):
     return render(request, 'home.html')
 

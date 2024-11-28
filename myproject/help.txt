@@ -1,0 +1,7 @@
+docker exec -it myproject-web-1 python manage.py makemigrations
+
+docker exec -it myproject-web-1 python manage.py migrate
+
+docker exec -it myproject-web-1 python manage.py createsuperuser
+
+docker exec -it myproject-web-1 python manage.py shell
